@@ -44,18 +44,18 @@ function compliteTodo(elem){
   elem.classList.toggle("complite");
 }
 
-function validateTodo(e){
-console.log(e);
-  if(!e.target.value.trim()){
+function validateTodo(event){
+
+  if(!event.target.value.trim()){
     errorE.innerText = "";
     btnE.disabled = true;
     return;
   } 
-  if(e.target.value.trim().length <= 7){
+  if(event.target.value.trim().length <= 7){
 errorE.innerText = "Error, length should be < 7";
 return;
   }
-  if(e.keyCode === 13){
+  if(event.keyCode === 13){
     onAddTodo();
   }
   
