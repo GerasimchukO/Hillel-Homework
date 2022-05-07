@@ -65,6 +65,7 @@ return;
   deleteAll(e);
 }
 
+
 function deleteAll(event){
     if(event.shiftKey ===true && event.keyCode === 8){
         inpTextE.value = "";
