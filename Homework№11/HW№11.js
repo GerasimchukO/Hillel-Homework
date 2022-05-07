@@ -65,14 +65,6 @@ return;
   deleteAll(e);
 }
 
-
-// function clearValue(inpTextE){
-//     if(shiftKey === true && e.keyCode === 8){
-//         inpTextE.value = "";
-//       }
-// }
-
-
 function deleteAll(event){
     if(event.shiftKey ===true && event.keyCode === 8){
         inpTextE.value = "";
