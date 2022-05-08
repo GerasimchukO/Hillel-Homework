@@ -58,8 +58,8 @@ function addTowns(massive){
       acc.unshift(elem.availableIn);
       return acc;
   },[]);
-  let filteredСities = allCities.flat();
-  let result = filteredСities.reduce((acc,elem,index)=> {
+  const filteredСities = allCities.flat();
+  const result = filteredСities.reduce((acc,elem,index)=> {
       if (filteredСities.indexOf(elem) === index){
           acc.unshift(elem);
       }
@@ -73,14 +73,14 @@ const city = addTowns(products);
 console.log(city);
 
 function addTownsProducts(massive){
-  let citiesProd = [];
+  const citiesProd = [];
   citiesProd = massive.reduce((acc,elem) =>{
       acc.unshift(elem.availableIn);
       return acc;
   },[]);
   
-  let citiesSecond = citiesProd.flat();
-  let result = citiesSecond.reduce((acc,elem,index)=> {
+  const citiesSecond = citiesProd.flat();
+  const result = citiesSecond.reduce((acc,elem,index)=> {
       if (citiesSecond.indexOf(elem) !== index && !acc.includes(elem)){
           acc.unshift(elem);
       }
