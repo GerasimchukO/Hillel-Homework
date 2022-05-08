@@ -64,6 +64,10 @@ const TOPPINGS = {
 };
 
 function CreateHamburger (size){
+  this._H_VALUES = {
+    PRICE: "price",
+    CALORIES: "calories",
+  }
   this.size = size;
   this.toppings = [];
 }
@@ -72,12 +76,19 @@ CreateHamburger.prototype.addTopping = function (topping){
   this.toppings.push(topping);
 };
 
+CreateHamburger.prototype.calculateHamburgerValues = function(valueName){
+  return this.toppings.reduce(
+    (a,e) => (a+= e[valueName]),
+    this.size[valueName]
+  );
+}
+
 CreateHamburger.prototype.getPrice = function(){
-  return this.toppings.reduce((a,e) => (a+= e.price), this.size.price);
+  return this.calculateHamburgerValues(this._H_VALUES.PRICE)
 };
 
 CreateHamburger.prototype.getCalories = function(){
-  return this.toppings.reduce((a,e) => (a+= e.calories), this.size.calories);
+  return this.calculateHamburgerValues(this._H_VALUES.CALORIES)
 };
 
 const smallHamburger = new CreateHamburger(HAMBURGER_SIZES.SMALL);
