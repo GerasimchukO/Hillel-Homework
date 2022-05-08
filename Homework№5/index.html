@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="Style.css" /> -->
+    <script src="HW№5.js" async defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="btn-container">
+      <input type="text" id="inp-first-name" placeholder="Enter first name" />
+      <input type="text" id="inp-second-name" placeholder="Enter second name" />
+      <input type="text" id="inp-telephone" placeholder="Enter telephone" />
+      <button id="btn">Enter</button>
+    </div>
+    <ul id="list-container"></ul>
+  </body>
+
+  <script id="template" type="text-template">
+    <li class="list-item-container">
+      <div>{{firstName}}</div>
+      <div>{{secondName}}</div>
+      <div>{{telephone}}</div>
+    </li>
+  </script>
+</html>
