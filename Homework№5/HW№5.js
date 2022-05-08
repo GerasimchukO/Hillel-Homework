@@ -54,8 +54,7 @@ console.log(allInfo);
 
 
 function addTowns(massive){
-  let allCities = []; 
-  allCities = massive.reduce((acc,elem) =>{
+  const allCities = massive.reduce((acc,elem) =>{
       acc.unshift(elem.availableIn);
       return acc;
   },[]);
