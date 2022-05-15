@@ -1,0 +1,25 @@
+.title{
+  width: 100%;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+.title-active {
+  background-color: lightblue;
+  border: 2px solid cadetblue;
+ 
+}
+
+.body{
+  width: 100%;
+  background-color: lightyellow;
+  display: none;
+}
+.title-container{
+  display: flex;
+}
+.show{
+  display: block;
+}
