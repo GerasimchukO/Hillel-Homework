@@ -1,0 +1,102 @@
+input,
+button {
+  border-radius: 5px;
+} 
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  gap: 4%;
+}
+
+.list {
+  column-gap: 10 px;
+  row-gap: 15px;
+  border: 1px solid grey;
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 25px;
+  height: 70vh;
+  overflow: auto;
+}
+
+.edit {
+height: 500px;
+width: 40%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.edit-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-title,
+.edit-body {
+  margin-bottom: 25px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 45%;
+  height: 80px;
+  border: 1px solid #909090;
+  background-color: lightyellow;
+}
+
+.item-content { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.item-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.todo-complete {
+  background-color: lightgreen;
+}
+
+.item-active {
+  border: 2px solid lightcoral;
+}
+
+.show-edit {
+  display: flex;
+}
+
+.hide-element {
+  display: none;
+}
