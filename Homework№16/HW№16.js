@@ -55,7 +55,11 @@ function deleteAll(event) {
 }
 
 function renderDate(date) {
-  containerE.innerHTML = `<li>${date.avatar_url}</li> <li>${date.public_repos}</li> <li>${date.followers}</li> <li>${date.following}</li>`;
+  containerE.innerHTML = `
+  <img src="${date.avatar_url}"></img> 
+  <li>Repositories : ${date.public_repos}</li>
+  <li>Followers : ${date.followers}</li> 
+  <li>Following : ${date.following}</li>`;
 }
 function renderError(errorCode) {
   errE.innerHTML = ERROR_MSG[errorCode];
